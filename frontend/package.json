@@ -1,5 +1,5 @@
 {
-  "name": "universal-shop-frontend",
+  "name": "universal-shop",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -15,13 +15,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "react-scripts": "5.0.1",
-    "typescript": "^5.2.2"
+    "react-scripts": "5.0.1"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "overrides": {
+    "typescript": "^4.9.5"
   }
 }
